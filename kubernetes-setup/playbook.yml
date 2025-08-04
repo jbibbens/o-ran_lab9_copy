@@ -1,0 +1,8 @@
+---
+- name: Install cri-dockerd and Kubernetes on all hosts
+  hosts: localhost
+  become: true
+  roles:
+    - cri_dockerd
+    - kubernetes
+
